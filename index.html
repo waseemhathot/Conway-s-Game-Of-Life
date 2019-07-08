@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>Conway's Game Of Life</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <link href="media-style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1 class="header header--align">Conway's Game Of Life</h1>
+    </header>
+
+    <div class="main-content">
+
+        <div class="user-input">
+
+            <input class="button start-button button--white" type="button" value="Start" onclick="start()" />
+            <input class="button pause-button button--red" type="button" value="Pause" onclick="stop()" />
+            <input class="button button--white" type="button" value="Reset" onclick="reset()" />    
+            <input class="button button--white" type="button" value="Random" onclick="randomize()" />    
+            
+        
+            <div class="range-input">
+                <input class="range-input__slide range-input__speed range-input__slide--rotate" type="range" value="500" min="40" max="1000"
+                    step="10">
+                <label class="range-input__label">Speed</label>
+            </div>
+
+        </div>
+
+        <table class="main-content__board"></table>
+
+    </div>
+
+    <script src="app .js"></script>
+</body>
+
+</html>

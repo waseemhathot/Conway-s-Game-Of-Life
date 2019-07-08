@@ -1,0 +1,76 @@
+
+
+
+@media only screen and (max-width: 1250px){
+    .user-input{
+        position: sticky;
+        top: 0;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button{
+        font-size: 0.5em;
+    }
+
+    .range-input{
+        font-size: 0.5em;
+    }
+}
+        
+
+
+@media only screen and (min-width: 1400px){
+    .user-input{
+        left: 6.5em;
+    }
+
+}
+
+@media only screen and (min-width: 1600px){
+    .user-input{
+        left: 11.5em;
+    }
+
+}
+
+@media only screen and (min-width: 1800px){
+    .user-input{
+        left: 15.5em;
+    }
+
+}
+
+@media only screen and (min-width: 2000px){
+    .user-input{
+        left: 22.5em;
+    }
+}
+
+
+@media only screen and (min-width: 2200px){
+    .user-input{
+        left: 42.5em;
+    }
+}
+
+@media only screen and (min-width: 2800px){
+    .user-input{
+        left: 70em;
+    }
+
+    .button{
+        font-size: 1.5em;
+    }
+
+    .range-input{
+        font-size: 1.5em;
+    }
+
+}

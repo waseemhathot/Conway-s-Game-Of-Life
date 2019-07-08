@@ -1,0 +1,118 @@
+
+:root{
+    font-size: 16px;
+}
+html{
+    background-color: #404040;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.header--align{
+    text-align: center;
+    font-size: 3em;
+}
+
+.main-content{  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.main-content__board{
+    border-collapse: collapse;
+    margin: 1em;
+}
+
+.main-content__board td{
+    border: 0.1px solid black;
+    width: 0.7em;
+    height: 0.7em;
+}
+
+.range-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.range-input__label{
+    margin-right: auto;
+}
+
+.range-input__slide{
+    padding: 0.1em;
+    margin: 0.7em;
+    margin-right: auto;
+}
+
+.range-input__slide--rotate{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.user-input{
+    border: 0.3em solid black;  
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    left: 1em;
+    background-color: black;
+}
+
+.dead-cell{
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+.live-cell{
+    background-color: black;
+    cursor: pointer;
+    
+}
+
+.dead-cell:hover{
+    background-color: red;
+}
+
+
+.button{
+    font-size: 1em;
+    border: 0.3em solid black;
+    border-radius: 50%;
+    padding: 1em;
+    outline: none;
+    font-weight: bold;
+    width: 9em;    
+}
+
+.button--white{
+    background-color: white;
+}
+
+.button--green{
+    background-color: #00FF00;
+}
+
+.button--red{
+    background-color: #FF0000
+}
+
+.button:active{
+    transform: translateY(0.25em);
+}
+
+
+.button:hover{
+    transform: scale(1.15);
+}
+
