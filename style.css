@@ -116,3 +116,7 @@ html{
     transform: scale(1.15);
 }
 
+.famous-shapes{
+    padding: 0.5em;
+    margin: 0.5em;
+}

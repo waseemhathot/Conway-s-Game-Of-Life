@@ -24,6 +24,14 @@
             <input class="button button--white" type="button" value="Reset" onclick="reset()" />    
             <input class="button button--white" type="button" value="Random" onclick="randomize()" />    
             
+            <select class="famous-shapes" onchange="applyShape()">
+                <option value="none">None</option>                    
+                <option value="glider">Glider</option>
+                <option value="exploder">Exploder</option>
+                <option value="small-exploder">Small Exploder</option>
+                <option value="ten-cell-row">10 Cell Row</option>
+                <option value="tumbler">Tumbler</option>
+            </select>
         
             <div class="range-input">
                 <input class="range-input__slide range-input__speed range-input__slide--rotate" type="range" value="500" min="40" max="1000"
