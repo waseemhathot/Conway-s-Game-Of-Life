@@ -80,7 +80,7 @@ html{
     position:fixed;
     left: 1em;
     background-color: var(--user-input-color);
-    padding: 0.1em;
+    padding: 0.7em;
 }
 
 .user-input__label{
@@ -112,7 +112,8 @@ html{
     padding: 1em;
     outline: none;
     font-weight: bold;
-    width: 9em;    
+    width: 9em;   
+    margin: 0.5em;
 }
 
 .button--white{
