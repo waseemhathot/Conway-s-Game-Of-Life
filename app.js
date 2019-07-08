@@ -3,14 +3,17 @@
 let gameData = {
     boardRows: 60,
     boardCols: 60,
-    tO: 100
+    tO: 200
 };
 
 gameData.gameBoard = initGameOfLifeBoard();
 gameData.boardTable = createBoardTable(gameData);
 
+let speedVal = document.documentElement.querySelector(".user-input__label--speed");
+
 let rangeSlide = document.querySelector(".range-input__slide");
 rangeSlide.addEventListener("input", function () {
+    speedVal.innerText = `Speed: ${rangeSlide.value}ms`;
     gameData.tO = rangeSlide.value;
 });
 
@@ -20,10 +23,13 @@ function start() {
     let startButton = document.querySelector(".start-button");
     pauseButton.disabled = false;
     startButton.disabled = true;
-    // pauseButton.classList.remove("button--red");
-    // pauseButton.classList.add("button--white");
-    // startButton.classList.remove("button--white");
-    // startButton.classList.add("button--green");
+    pauseButton.classList.remove("button--grey-border");
+    pauseButton.classList.add("button--black-border");
+    pauseButton.classList.add("button-hover");  
+    startButton.classList.remove("button--black-border");
+    startButton.classList.add("button--grey-border");
+    startButton.classList.remove("button-hover");
+
     startGame(gameData);
 }
 
@@ -144,10 +150,13 @@ function stop() {
     let startButton = document.querySelector(".start-button");
     pauseButton.disabled = true;
     startButton.disabled = false;
-    // pauseButton.classList.remove("button--white");
-    // pauseButton.classList.add("button--red");
-    // startButton.classList.remove("button--green");
-    // startButton.classList.add("button--white");
+    pauseButton.classList.remove("button--black-border");
+    pauseButton.classList.add("button--grey-border");
+    pauseButton.classList.remove("button-hover");
+    startButton.classList.remove("button--grey-border");
+    startButton.classList.add("button--black-border");
+    startButton.classList.add("button-hover");
+    
 
     stopGame(gameData);
 }

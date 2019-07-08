@@ -26,6 +26,24 @@ html{
 
 .header__icon{
     margin: 0 0.5em 0 0;
+    -webkit-animation-name: icon; 
+    -webkit-animation-duration: 5s; 
+    animation-name: icon;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes icon {
+    0% {transform: rotate(90deg);}
+    25% {transform: rotate(180deg);}
+    50% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}  
+}
+  
+@keyframes icon {
+    0% {transform: rotate(90deg);}
+    25% {transform: rotate(180deg);}
+    50% {transform: rotate(279deg);}
+    100% {transform: rotate(360deg);}  
 }
 .main-content{  
     display: flex;
@@ -69,7 +87,7 @@ html{
 
 .user-input{
     border: 0.3em solid black;  
-    border-radius: 2em;
+    border-radius: 0.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,6 +121,7 @@ html{
 
 
 .button{
+    background-color: white;
     font-size: 1em;
     border: 0.3em solid black;
     padding: 1em;
@@ -112,16 +131,13 @@ html{
     margin: 0.5em;
 }
 
-.button--white{
-    background-color: white;
+.button--grey-border{
+    border: 0.3em solid grey;
+    opacity: 0.3;
 }
 
-.button--green{
-    background-color: #00FF00;
-}
-
-.button--red{
-    background-color: #FF0000
+.button--black-border{
+    border: 0.3em solid black;
 }
 
 .button:active{
@@ -129,11 +145,12 @@ html{
 }
 
 
-.button:hover{
+.button-hover:hover{
     transform: scale(1.05);
 }
 
 .famous-shapes{
     padding: 0.5em;
     margin: 0.5em;
+    border: 0.2em solid black;
 }

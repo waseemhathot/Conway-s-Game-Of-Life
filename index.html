@@ -14,7 +14,7 @@
 
 <body>
     <header class="header">
-        <img class="header__icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAAAAABURb1YAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjBwgPIzZR35K2AAABm0lEQVRYw+2YT2qDUBDGxV6jJOQYuUIwV8g9umvjOhdor1CEIkIJpY6KthQNiH8al01AkwNoVtW6iG+eQq0pknbxfruP+fwII2+cPA5ApaiLNlUvcWB5iA02pSzdReHqLUbgVO8zrygSiAuict9MiSpS08dKEUOCxk9PLWPygrArq0hgZigyM6BKCexQ5CyGxfxxjL0j7COI9igdY0vUfms43xptlYM2NIqaahrLXxMnhAjWKOKVMpsIRyazx7upQNQVRJTRbu1NKA05wlAWeVSC1r3FLIbFnDkmpqqhNOL4I9xIFi94oqbNGLD8gODA6j0kvC4Xc/HIfPF0P7+puL4FB5/yy68m6CZigCIhS1WRCcqz8YZYYFCP6eUJd9Os4rDRZpfDitFCGQ8qMRg/eBkaP2BzICp1m73RBGwjL8p0i6WQ6v4PQ5TFsJjzxvRzGDofTbVubBzNzoNi+RLQxsag6Dy2pJAyxifsN/UhesqbYjEs5rwxXRdaZUUZ182F9oT1uoW+lv1/9g+GxbCYX8X0cg3U06VUP1dkX05ABpYh/p0vAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA3LTA4VDE1OjM1OjU0LTA0OjAw90CoFgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wNy0wOFQxNTozNTo1NC0wNDowMIYdEKoAAAAASUVORK5CYII=
+        <img class="header__icon" alt="failed to load image" title="icon image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAAAAABURb1YAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjBwgPIzZR35K2AAABm0lEQVRYw+2YT2qDUBDGxV6jJOQYuUIwV8g9umvjOhdor1CEIkIJpY6KthQNiH8al01AkwNoVtW6iG+eQq0pknbxfruP+fwII2+cPA5ApaiLNlUvcWB5iA02pSzdReHqLUbgVO8zrygSiAuict9MiSpS08dKEUOCxk9PLWPygrArq0hgZigyM6BKCexQ5CyGxfxxjL0j7COI9igdY0vUfms43xptlYM2NIqaahrLXxMnhAjWKOKVMpsIRyazx7upQNQVRJTRbu1NKA05wlAWeVSC1r3FLIbFnDkmpqqhNOL4I9xIFi94oqbNGLD8gODA6j0kvC4Xc/HIfPF0P7+puL4FB5/yy68m6CZigCIhS1WRCcqz8YZYYFCP6eUJd9Os4rDRZpfDitFCGQ8qMRg/eBkaP2BzICp1m73RBGwjL8p0i6WQ6v4PQ5TFsJjzxvRzGDofTbVubBzNzoNi+RLQxsag6Dy2pJAyxifsN/UhesqbYjEs5rwxXRdaZUUZ182F9oT1uoW+lv1/9g+GxbCYX8X0cg3U06VUP1dkX05ABpYh/p0vAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA3LTA4VDE1OjM1OjU0LTA0OjAw90CoFgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wNy0wOFQxNTozNTo1NC0wNDowMIYdEKoAAAAASUVORK5CYII=
         " />
         <h1 class="header--color">Waseem's Game Of Life</h1>
     </header>
@@ -23,10 +23,10 @@
 
         <div class="user-input">
 
-            <input class="button start-button button--white" type="button" value="Start" onclick="start()" />
-            <input class="button pause-button button--white" type="button" value="Pause" onclick="stop()" />
-            <input class="button button--white" type="button" value="Reset" onclick="reset()" />    
-            <input class="button button--white" type="button" value="Random" onclick="randomize()" />    
+            <input class="button start-button button--black-border button-hover" type="button" value="Start" onclick="start()" />
+            <input class="button pause-button button--black-border button-hover" type="button" value="Pause" onclick="stop()" />
+            <input class="button button--black-border button-hover" type="button" value="Reset" onclick="reset()" />    
+            <input class="button button--black-border button-hover" type="button" value="Random" onclick="randomize()" />    
             
             <label class="user-input__label">Shapes:</label>
             <select class="famous-shapes" onchange="applyShape()">
@@ -40,9 +40,9 @@
                 
             </select>
             
-            <label class="user-input__label">Speed:</label>                    
+            <label class="user-input__label user-input__label--speed">Speed: 200ms</label>                    
             <div class="range-input">
-                <input class="range-input__slide range-input__speed range-input__slide--rotate" type="range" value="100" min="5" max="1000"
+                <input class="range-input__slide range-input__speed range-input__slide--rotate" type="range" value="200" min="50" max="350"
                     step="5">
             </div>
 
