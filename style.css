@@ -1,16 +1,33 @@
 
 :root{
     font-size: 16px;
+    --background-color: black;
+    --header-color: white;
+    --user-input-color: white;
 }
 html{
-    background-color: #404040;
+    background-color: var(--background-color);
     color: #ffffff;
     font-style: italic;
 }
 
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em;
+}
+
+.header--color{
+    color: var(--header-color);
+}
+
+.header-icon{
+    margin: 0 0.5em 0 0;
+}
+
 .header--align{
     text-align: center;
-    font-size: 3em;
 }
 
 .main-content{  
@@ -38,9 +55,6 @@ html{
     align-items: center;
 }
 
-.range-input__label{
-    margin-right: auto;
-}
 
 .range-input__slide{
     padding: 0.1em;
@@ -65,9 +79,15 @@ html{
     align-items: center;
     position:fixed;
     left: 1em;
-    background-color: black;
+    background-color: var(--user-input-color);
+    padding: 0.1em;
 }
 
+.user-input__label{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--background-color);
+}
 .dead-cell{
     background-color: white;
     cursor: pointer;
