@@ -1,7 +1,7 @@
 
 
 
-@media only screen and (max-width: 1250px){
+@media only screen and (max-width: 1300px){
     .user-input{
         position: sticky;
         top: 0;
@@ -35,6 +35,13 @@
 
 @media only screen and (min-width: 1600px){
     .user-input{
+        left: 9.5em;
+    }
+
+}
+
+@media only screen and (min-width: 1700px){
+    .user-input{
         left: 11.5em;
     }
 
@@ -42,10 +49,18 @@
 
 @media only screen and (min-width: 1800px){
     .user-input{
-        left: 15.5em;
+        left: 15em;
     }
-
 }
+
+
+@media only screen and (min-width: 1900px){
+    .user-input{
+        left: 18.5em;
+    }
+}
+
+
 
 @media only screen and (min-width: 2000px){
     .user-input{
@@ -53,16 +68,57 @@
     }
 }
 
+@media only screen and (min-width: 2100px){
+    .user-input{
+        left: 24.5em;
+    }
+}
+
 
 @media only screen and (min-width: 2200px){
+    .user-input{
+        left: 27.5em;
+    }
+}
+
+@media only screen and (min-width: 2300px){
+    .user-input{
+        left: 30.5em;
+    }
+}
+
+@media only screen and (min-width: 2400px){
+    .user-input{
+        left: 33.5em;
+    }
+}
+
+
+@media only screen and (min-width: 2500px){
+    .user-input{
+        left: 36.5em;
+    }
+}
+
+
+@media only screen and (min-width: 2600px){
+    .user-input{
+        left: 39.5em;
+    }
+}
+
+@media only screen and (min-width: 2700px){
     .user-input{
         left: 42.5em;
     }
 }
 
+
+
+
 @media only screen and (min-width: 2800px){
     .user-input{
-        left: 70em;
+        left: 44em;
     }
 
     .button{
