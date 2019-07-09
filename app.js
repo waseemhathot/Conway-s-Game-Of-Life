@@ -21,6 +21,7 @@ rangeSlide.addEventListener("input", function () {
 function start() {
     let pauseButton = document.querySelector(".pause-button");
     let startButton = document.querySelector(".start-button");
+    let icon = document.querySelector(".header__icon");
     pauseButton.disabled = false;
     startButton.disabled = true;
     pauseButton.classList.remove("button--grey-border");
@@ -29,6 +30,9 @@ function start() {
     startButton.classList.remove("button--black-border");
     startButton.classList.add("button--grey-border");
     startButton.classList.remove("button-hover");
+    icon.style.animation = 'none';
+    icon.offsetHeight;
+    icon.style.animation = null;
 
     startGame(gameData);
 }

@@ -26,6 +26,10 @@ html{
 
 .header__icon{
     margin: 0 0.5em 0 0;
+
+}
+
+.header__icon--animate{
     -webkit-animation-name: icon; 
     -webkit-animation-duration: 5s; 
     animation-name: icon;
