@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -30,19 +30,18 @@
             
             <label class="user-input__label">Shapes:</label>
             <select class="famous-shapes" onchange="applyShape()">
-                <option value="none">None</option>                    
+                <option value="none">None</option>                  
+                <option value="game-of-life">GameOfLife</option>                
                 <option value="glider">Glider</option>
                 <option value="exploder">Exploder</option>
                 <option value="small-exploder">Small Exploder</option>
                 <option value="ten-cell-row">10 Cell Row</option>
                 <option value="tumbler">Tumbler</option>
-                <option value="game-of-life">GameOfLife</option>
-                
             </select>
             
             <label class="user-input__label user-input__label--speed">Speed: 200ms</label>                    
             <div class="range-input">
-                <input class="range-input__slide range-input__speed range-input__slide--rotate" type="range" value="200" min="50" max="350"
+                <input class="range-input__slide range-input__speed range-input__slide--rotate" type="range" value="200" min="16.6" max="350"
                     step="5">
             </div>
 

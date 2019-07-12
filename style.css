@@ -12,6 +12,12 @@ html{
     font-style: italic;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
 .header{
     display: flex;
     flex-direction: row;
@@ -19,6 +25,7 @@ html{
     align-items: center;
     padding: 1em;
 }
+
 
 .header--color{
     color: var(--header-color);
@@ -33,7 +40,7 @@ html{
     -webkit-animation-name: icon; 
     -webkit-animation-duration: 5s; 
     animation-name: icon;
-    animation-duration: 5s;
+    animation-duration: 2s;
 }
 
 @-webkit-keyframes icon {
@@ -49,6 +56,7 @@ html{
     50% {transform: rotate(279deg);}
     100% {transform: rotate(360deg);}  
 }
+
 .main-content{  
     display: flex;
     flex-direction: row;
@@ -120,7 +128,7 @@ html{
 }
 
 .dead-cell:hover{
-    background-color: red;
+    background-color: black;
 }
 
 

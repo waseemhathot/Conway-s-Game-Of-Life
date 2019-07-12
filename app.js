@@ -22,14 +22,8 @@ function start() {
     let pauseButton = document.querySelector(".pause-button");
     let startButton = document.querySelector(".start-button");
     let icon = document.querySelector(".header__icon");
-    pauseButton.disabled = false;
-    startButton.disabled = true;
-    pauseButton.classList.remove("button--grey-border");
-    pauseButton.classList.add("button--black-border");
-    pauseButton.classList.add("button-hover");  
-    startButton.classList.remove("button--black-border");
-    startButton.classList.add("button--grey-border");
-    startButton.classList.remove("button-hover");
+    enableButton(pauseButton);
+    disableButton(startButton);
     icon.style.animation = 'none';
     icon.offsetHeight;
     icon.style.animation = null;
@@ -152,15 +146,8 @@ function resetGame(data) {
 function stop() {
     let pauseButton = document.querySelector(".pause-button");
     let startButton = document.querySelector(".start-button");
-    pauseButton.disabled = true;
-    startButton.disabled = false;
-    pauseButton.classList.remove("button--black-border");
-    pauseButton.classList.add("button--grey-border");
-    pauseButton.classList.remove("button-hover");
-    startButton.classList.remove("button--grey-border");
-    startButton.classList.add("button--black-border");
-    startButton.classList.add("button-hover");
-    
+    disableButton(pauseButton);
+    enableButton(startButton);
 
     stopGame(gameData);
 }
@@ -171,6 +158,21 @@ function stopGame(data) {
     }
 }
 
+
+
+function disableButton(button){
+    button.disabled = true;    
+    button.classList.remove("button--black-border");
+    button.classList.add("button--grey-border");
+    button.classList.remove("button-hover");
+}
+
+function enableButton(button){
+    button.disabled = false;    
+    button.classList.remove("button--grey-border");
+    button.classList.add("button--black-border");
+    button.classList.add("button-hover");
+}
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -287,6 +289,7 @@ function applyShape() {
     let shape = document.querySelector(".famous-shapes").value;
     stop();
     resetGame(gameData);
+                                            ///try hash table
     if (shape === "exploder") {
         gameData.gameBoard = initExploderBoard();
         updateBoard(gameData);
@@ -344,7 +347,6 @@ function updateBoard(data) {
 
 /*
 I have achived the Famouse Shapes Below By clicking the cells in the browser, and printing the array in the console when start is pressed. Then i used chrome's feature "store as global variable" and then copy(JSON.stringify(temp1)), which added it to the clipboard and then i paste it here.
-
 */
 
 
